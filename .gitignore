@@ -1,0 +1,5 @@
+.Gemfile
+debug.log
+pkg/
+/tmp/
+.idea

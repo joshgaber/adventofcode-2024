@@ -1,0 +1,7 @@
+module Day24
+  class Main
+    def initialize: (String input) -> void
+    def part1: -> untyped
+    def part2: -> untyped
+  end
+end
