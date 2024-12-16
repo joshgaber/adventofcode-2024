@@ -1,9 +1,27 @@
+require_relative 'multiplier'
+
 module Day3
   class Main
-    def initialize(input); end
+    DO_DONT_MATCH = /do(?:n't)?\(\)/
 
-    def part1; end
+    def initialize(input)
+      @input = input.lines.join
+    end
 
-    def part2; end
+    def part1
+      multipliers = Multiplier.list_from_string(@input)
+      multipliers.sum(&:product)
+    end
+
+    def part2
+      multipliers = []
+      remaining = @input
+      loop do
+        remaining, part, suffix = remaining.rpartition(DO_DONT_MATCH)
+        multipliers.concat(Multiplier.list_from_string(suffix)) if part != "don't()"
+        break if remaining.empty?
+      end
+      multipliers.sum(&:product)
+    end
   end
 end
