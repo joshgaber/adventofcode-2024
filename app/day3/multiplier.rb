@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Day3
   class Multiplier
     MUL_MATCH = /mul\((\d{1,3}),(\d{1,3})\)/

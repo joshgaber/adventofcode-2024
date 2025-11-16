@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Day24
   class Main
     def initialize(input); end

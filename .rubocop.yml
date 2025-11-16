@@ -3,10 +3,13 @@ require: rubocop-rspec
 AllCops:
   NewCops: enable
 
-Style/Documentation:
+Metrics:
   Enabled: false
 
-Style/FrozenStringLiteralComment:
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
 
 Style/RedundantInitialize:

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 (1..25).each do |d|
   require_relative "app/day#{d}/main"
 end

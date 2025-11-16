@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Day4
   class WordSearch
     SEARCH_DIRECTIONS = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]].freeze
